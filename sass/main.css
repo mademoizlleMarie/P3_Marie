@@ -51,23 +51,30 @@ body {
   align-items: center;
 }
 .menu__note a {
+  height: 100%;
+  width: 100%;
+  display: block;
   text-decoration: none;
 }
 .menu__note img {
   width: 20%;
   height: auto;
-  margin-top: 100px;
 }
 .menu__note h1 {
   color: #3c1218;
   font-family: devonshire, serif;
+  font-weight: normal;
 }
 .menu__note h2 {
   color: #3c1218;
   font-family: sriracha, serif;
+  justify-content: center;
+  align-items: center;
 }
 .menu__chic {
   background-color: #fff5fe;
+  height: 100%;
+  align-items: center;
 }
 .menu__chic a {
   text-decoration: none;
@@ -84,30 +91,43 @@ body {
 }
 .menu__delice {
   background-color: #f9f9f9;
+  height: 100%;
+  align-items: center;
 }
 .menu__delice a {
   text-decoration: none;
 }
 .menu__delice h1 {
   font-family: "Dancing Script", serif;
+  font-weight: normal;
+  background-image: linear-gradient(50deg, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__delice h2 {
-  font-family: "Kaushan script", serif;
+  font-family: "Kalam", serif;
+  font-weight: normal;
+  color: #0887FB;
 }
 .menu__palette {
   background-color: #fdfffd;
+  height: 100%;
+  align-items: center;
 }
 .menu__palette a {
   text-decoration: none;
 }
 .menu__palette h1 {
   font-family: "Kaushan script", serif;
-  background-image: linear-gradient(155deg, #D8852E, #905BFD);
+  font-weight: normal;
+  background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu__palette h2 {
-  font-family: "Kaushan script", serif;
+  font-family: "Kalam", serif;
+  font-weight: normal;
+  color: #72BF56;
 }
 
 /*# sourceMappingURL=main.css.map */
