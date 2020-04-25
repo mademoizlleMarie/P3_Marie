@@ -1,0 +1,111 @@
+$primary_color : #569C87;
+$secondary_color : #E9C353;
+
+header,footer,.prochainement{
+  background-color: $primary_color;
+  a{
+    text-decoration: none;
+    color: $secondary_color;
+  }
+}
+body{
+  margin: 0;
+}
+.titre h1{
+  margin: 0;
+  color: $secondary_color;
+  text-align: center;
+  font-size: 2.6em;
+}
+.prochainement{
+  width: 60%;
+  margin: auto;
+}
+.footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  a{
+    margin: 5px;
+  }
+}
+.menu_global{
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  height:400px;
+  margin: 20px auto;
+  text-align: center;
+   &__note {
+     background-color: #fcdfdb;
+     height: 100%;
+     align-items: center;
+     a{
+       text-decoration: none;
+     }
+     img{
+       width: 20%;
+       height: auto;
+       margin-top: 100px;
+     }
+     h1{
+       color: #3c1218;
+       font-family: devonshire, serif;
+     }
+     h2{
+       color:#3c1218;
+       font-family: sriracha, serif;
+     }
+   }
+
+   &__chic {
+     background-color: #fff5fe;
+     a{
+       text-decoration: none;
+     }
+     h1{
+       font-family: Lateef, serif;
+       background-image: linear-gradient(155deg, #D8852E,  #905BFD);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+     }
+     h2{
+       font-family: 'Libre Baskerville', serif;
+       color:#D8852E ;
+     }
+   }
+
+   &__delice {
+     background-color: #f9f9f9;
+     a{
+       text-decoration: none;
+     }
+     h1{
+       font-family: 'Dancing Script', serif;
+     }
+     h2{
+       font-family: 'Kaushan script', serif
+     }
+   }
+
+   &__palette {
+     background-color: #fdfffd;
+     a{
+       text-decoration: none;
+     }
+     h1{
+       font-family: 'Kaushan script', serif;
+       background-image: linear-gradient(155deg, #D8852E,  #905BFD);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+     }
+     h2{
+       font-family: 'Kaushan script', serif
+     }
+   }
+ }
