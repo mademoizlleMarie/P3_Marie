@@ -19,7 +19,12 @@ body{
 }
 .prochainement{
   width: 60%;
-  margin: auto;
+  height: 60px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px
 }
 .footer{
   position: fixed;
@@ -27,6 +32,8 @@ body{
   justify-content: space-between;
   bottom: 0;
   width: 100%;
+  height: 40px;
+  align-items: center;
   a{
     margin: 5px;
   }
@@ -41,16 +48,24 @@ body{
   height:400px;
   margin: 20px auto;
   text-align: center;
+  a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+  }
+  span{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
    &__note {
      background-color: #fcdfdb;
      height: 100%;
      align-items: center;
-     a{
-       height: 100%;
-       width: 100%;
-       display: block;
-       text-decoration: none;
-     }
      img{
        width: 20%;
        height: auto;
@@ -63,8 +78,7 @@ body{
      h2{
        color:#3c1218;
        font-family: sriracha, serif;
-       justify-content:center;
-       align-items:center
+       font-weight: normal;
      }
    }
 
@@ -72,12 +86,8 @@ body{
      background-color: #fff5fe;
      height: 100%;
      align-items: center;
-     a{
-       text-decoration: none;
-     }
      h1{
        font-family: Lateef, serif;
-
        background-image: linear-gradient(155deg, #D8852E,  #905BFD);
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
@@ -92,9 +102,6 @@ body{
      background-color: #f9f9f9;
      height: 100%;
      align-items: center;
-     a{
-       text-decoration: none;
-     }
      h1{
        font-family: 'Dancing Script', serif;
        font-weight: normal;
@@ -113,9 +120,6 @@ body{
      background-color: #fdfffd;
      height: 100%;
      align-items: center;
-     a{
-       text-decoration: none;
-     }
      h1{
        font-family: 'Kaushan script', serif;
        font-weight: normal;

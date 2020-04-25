@@ -19,7 +19,12 @@ body {
 
 .prochainement {
   width: 60%;
-  margin: auto;
+  height: 60px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .footer {
@@ -28,6 +33,8 @@ body {
   justify-content: space-between;
   bottom: 0;
   width: 100%;
+  height: 40px;
+  align-items: center;
 }
 .footer a {
   margin: 5px;
@@ -45,16 +52,23 @@ body {
   margin: 20px auto;
   text-align: center;
 }
-.menu__note {
-  background-color: #fcdfdb;
-  height: 100%;
-  align-items: center;
-}
-.menu__note a {
+.menu a {
   height: 100%;
   width: 100%;
   display: block;
   text-decoration: none;
+}
+.menu span {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__note {
+  background-color: #fcdfdb;
+  height: 100%;
+  align-items: center;
 }
 .menu__note img {
   width: 20%;
@@ -68,16 +82,12 @@ body {
 .menu__note h2 {
   color: #3c1218;
   font-family: sriracha, serif;
-  justify-content: center;
-  align-items: center;
+  font-weight: normal;
 }
 .menu__chic {
   background-color: #fff5fe;
   height: 100%;
   align-items: center;
-}
-.menu__chic a {
-  text-decoration: none;
 }
 .menu__chic h1 {
   font-family: Lateef, serif;
@@ -93,9 +103,6 @@ body {
   background-color: #f9f9f9;
   height: 100%;
   align-items: center;
-}
-.menu__delice a {
-  text-decoration: none;
 }
 .menu__delice h1 {
   font-family: "Dancing Script", serif;
@@ -113,9 +120,6 @@ body {
   background-color: #fdfffd;
   height: 100%;
   align-items: center;
-}
-.menu__palette a {
-  text-decoration: none;
 }
 .menu__palette h1 {
   font-family: "Kaushan script", serif;
