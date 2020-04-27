@@ -1,3 +1,19 @@
+@keyframes movecircle {
+  from {
+    transform: translateY(0.3em);
+  }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(6px);
+  }
+}
 body {
   margin: 0;
 }
@@ -128,12 +144,12 @@ body {
 }
 .affiche__note h1 {
   color: #3c1218;
-  font-family: devonshire, serif;
+  font-family: "devonshire", serif;
   font-weight: normal;
 }
 .affiche__note h2 {
   color: #3c1218;
-  font-family: sriracha, serif;
+  font-family: "sriracha", serif;
   font-weight: normal;
 }
 .affiche__note:hover .affiche__note__bg {
@@ -158,7 +174,7 @@ body {
   position: relative;
 }
 .affiche__chic h1 {
-  font-family: Lateef, serif;
+  font-family: "Lateef", serif;
   background-image: linear-gradient(155deg, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -171,7 +187,7 @@ body {
   opacity: 1;
 }
 .affiche__chic__bg {
-  background-color: #ffdcfb;
+  background-color: #ffebfd;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms ease-in-out;
@@ -198,13 +214,13 @@ body {
 .affiche__delice h2 {
   font-family: "Kalam", serif;
   font-weight: normal;
-  color: #0887FB;
+  color: #0431DF;
 }
 .affiche__delice:hover .affiche__delice__bg {
   opacity: 1;
 }
 .affiche__delice__bg {
-  background-color: #ececec;
+  background-color: #f4f4f4;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms ease-in-out;
@@ -231,13 +247,13 @@ body {
 .affiche__palette h2 {
   font-family: "Kalam", serif;
   font-weight: normal;
-  color: #72BF56;
+  color: #3D9139;
 }
 .affiche__palette:hover .affiche__palette__bg {
   opacity: 1;
 }
 .affiche__palette__bg {
-  background-color: #e4ffe4;
+  background-color: #f3fff3;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms ease-in-out;
@@ -246,23 +262,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-@keyframes movecircle {
-  from {
-    transform: translateY(0.3em);
-  }
-  100% {
-    transform: translateY(-0.3em);
-  }
-}
-@keyframes wiggle {
-  from {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(6px);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
