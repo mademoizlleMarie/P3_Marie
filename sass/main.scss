@@ -11,7 +11,12 @@ body{
     color: $secondary_color;
     text-align: center;
     font-size: 2.6em;
+    a{
+      text-decoration: none;
+      color: $secondary_color;
+    }
   }
+
 }
 .prochainement{
   width: 60%;
@@ -82,11 +87,11 @@ body{
     transition-timing-function: linear;
    }
 }
-.menu_global{
+.affiche_global{
   display: flex;
   flex-direction: column;
 }
-.menu {
+.affiche{
   box-shadow: 0 0 8px 1px #a2a5a4;
   width: 80%;
   height:400px;
@@ -131,7 +136,7 @@ body{
       font-weight: normal;
     }
     &:hover{
-      & .menu__note__bg{
+      & .affiche__note__bg{
         opacity: 1;
       }
 
@@ -165,7 +170,7 @@ body{
       color:#D8852E ;
     }
     &:hover{
-      & .menu__chic__bg{
+      & .affiche__chic__bg{
         opacity: 1;
       }
     }
@@ -200,7 +205,7 @@ body{
       color: #0887FB;
     }
     &:hover{
-      & .menu__delice__bg{
+      & .affiche__delice__bg{
         opacity: 1;
       }
     }
@@ -235,7 +240,7 @@ body{
       color: #72BF56;
     }
     &:hover{
-      & .menu__palette__bg{
+      & .affiche__palette__bg{
         opacity: 1;
       }
     }
