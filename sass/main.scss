@@ -96,6 +96,10 @@ body{
     width: 100%;
     display: block;
     text-decoration: none;
+    & span:hover{
+      transform: scale(1.2);
+      transition: transform 500ms ease-in-out;
+    }
   }
   span{
     height: 100%;
@@ -104,13 +108,13 @@ body{
     justify-content: center;
     align-items: center;
   }
-  span:hover{
 
-  }
   &__note {
     background-color: #fcdfdb;
     height: 100%;
     align-items: center;
+    z-index: 1;
+    position: relative;
     img{
       width: 20%;
       height: auto;
@@ -125,11 +129,30 @@ body{
       font-family: sriracha, serif;
       font-weight: normal;
     }
+    &:hover{
+      & .menu__note__bg{
+        opacity: 1;
+      }
+
+    }
+    &__bg {
+      background-color: darken(#fcdfdb, 2);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
   &__chic {
     background-color: #fff5fe;
     height: 100%;
     align-items: center;
+    z-index: 1;
+    position: relative;
     h1{
       font-family: Lateef, serif;
       background-image: linear-gradient(155deg, #D8852E,  #905BFD);
@@ -140,11 +163,29 @@ body{
       font-family: 'Libre Baskerville', serif;
       color:#D8852E ;
     }
+    &:hover{
+      & .menu__chic__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      background-color: darken(#fff5fe, 5);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
   &__delice {
     background-color: #f9f9f9;
     height: 100%;
     align-items: center;
+    z-index: 1;
+    position: relative;
     h1{
       font-family: 'Dancing Script', serif;
       font-weight: normal;
@@ -157,11 +198,29 @@ body{
       font-weight: normal;
       color: #0887FB;
     }
+    &:hover{
+      & .menu__delice__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      background-color: darken(#f9f9f9, 5);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
   &__palette {
     background-color: #fdfffd;
     height: 100%;
     align-items: center;
+    z-index: 1;
+    position: relative;
     h1{
       font-family: 'Kaushan script', serif;
       font-weight: normal;
@@ -173,6 +232,22 @@ body{
       font-family: 'Kalam', serif;
       font-weight: normal;
       color: #72BF56;
+    }
+    &:hover{
+      & .menu__palette__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      background-color: darken(#fdfffd, 5);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 }

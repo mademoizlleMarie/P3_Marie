@@ -99,6 +99,10 @@ body {
   display: block;
   text-decoration: none;
 }
+.menu__lien span:hover {
+  transform: scale(1.2);
+  transition: transform 500ms ease-in-out;
+}
 .menu span {
   height: 100%;
   display: flex;
@@ -110,6 +114,8 @@ body {
   background-color: #fcdfdb;
   height: 100%;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .menu__note img {
   width: 20%;
@@ -125,10 +131,26 @@ body {
   font-family: sriracha, serif;
   font-weight: normal;
 }
+.menu__note:hover .menu__note__bg {
+  opacity: 1;
+}
+.menu__note__bg {
+  background-color: #fbd7d2;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .menu__chic {
   background-color: #fff5fe;
   height: 100%;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .menu__chic h1 {
   font-family: Lateef, serif;
@@ -140,10 +162,26 @@ body {
   font-family: "Libre Baskerville", serif;
   color: #D8852E;
 }
+.menu__chic:hover .menu__chic__bg {
+  opacity: 1;
+}
+.menu__chic__bg {
+  background-color: #ffdcfb;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .menu__delice {
   background-color: #f9f9f9;
   height: 100%;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .menu__delice h1 {
   font-family: "Dancing Script", serif;
@@ -157,10 +195,26 @@ body {
   font-weight: normal;
   color: #0887FB;
 }
+.menu__delice:hover .menu__delice__bg {
+  opacity: 1;
+}
+.menu__delice__bg {
+  background-color: #ececec;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .menu__palette {
   background-color: #fdfffd;
   height: 100%;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .menu__palette h1 {
   font-family: "Kaushan script", serif;
@@ -173,6 +227,20 @@ body {
   font-family: "Kalam", serif;
   font-weight: normal;
   color: #72BF56;
+}
+.menu__palette:hover .menu__palette__bg {
+  opacity: 1;
+}
+.menu__palette__bg {
+  background-color: #e4ffe4;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @keyframes movecircle {
