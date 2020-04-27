@@ -1,0 +1,20 @@
+
+@keyframes movecircle {
+  from {
+    transform: translateY(0.3em);
+  }
+
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(6px);
+  }
+}
+

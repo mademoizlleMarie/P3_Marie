@@ -1,5 +1,6 @@
-$primary_color : #569C87;
-$secondary_color : #E9C353;
+@import "colour";
+@import "mixin";
+@import "keyframes";
 
 body{
   margin: 0;
@@ -33,38 +34,19 @@ body{
   }
   &__circle1{
     padding: 0 2px 0 5px;
-    width: 0.5em;
-    height: 0.5em;
-    animation-name: movecircle;
-    animation-duration: 900ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition-timing-function: ease-in-out;
+    @include circle
   }
   &__circle2{
     padding: 2px;
-    width: 0.5em;
-    height: 0.5em;
-    animation-name: movecircle;
-    animation-duration: 900ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition-timing-function: ease-in-out;
+    @include circle;
     animation-delay: 300ms;
   }
   &__circle3{
     padding: 2px;
-    width: 0.5em;
-    height: 0.5em;
-    animation-name: movecircle;
-    animation-duration: 900ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition-timing-function: ease-in-out;
+    @include circle;
     animation-delay: 600ms;
   }
 }
-
 .footer{
   position: fixed;
   display: flex;
@@ -114,24 +96,19 @@ body{
     justify-content: center;
     align-items: center;
   }
-
   &__note {
-    background-color: #fcdfdb;
-    height: 100%;
-    align-items: center;
-    z-index: 1;
-    position: relative;
+    @include background_menu($note_background_color);
     img{
       width: 20%;
       height: auto;
     }
     h1{
-      color: #3c1218;
+      color: $note_color_primary;
       font-family: devonshire, serif;
       font-weight: normal;
     }
     h2{
-      color:#3c1218;
+      color:$note_color_primary;
       font-family: sriracha, serif;
       font-weight: normal;
     }
@@ -139,35 +116,22 @@ body{
       & .affiche__note__bg{
         opacity: 1;
       }
-
     }
     &__bg {
-      background-color: darken(#fcdfdb, 2);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms ease-in-out;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      @include opacity($note_background_color);
     }
   }
   &__chic {
-    background-color: #fff5fe;
-    height: 100%;
-    align-items: center;
-    z-index: 1;
-    position: relative;
+    @include background_menu($chic_background_color);
     h1{
       font-family: Lateef, serif;
-      background-image: linear-gradient(155deg, #D8852E,  #905BFD);
+      background-image: linear-gradient(155deg, $chic_color_primary,  $chic_color_secondary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     h2{
       font-family: 'Libre Baskerville', serif;
-      color:#D8852E ;
+      color:$chic_color_primary ;
     }
     &:hover{
       & .affiche__chic__bg{
@@ -175,34 +139,22 @@ body{
       }
     }
     &__bg {
-      background-color: darken(#fff5fe, 5);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms ease-in-out;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      @include opacity($chic_background_color);
     }
   }
   &__delice {
-    background-color: #f9f9f9;
-    height: 100%;
-    align-items: center;
-    z-index: 1;
-    position: relative;
+    @include background_menu($delice_background_color);
     h1{
       font-family: 'Dancing Script', serif;
       font-weight: normal;
-      background-image: linear-gradient(50deg, #0431DF,  #0887FB);
+      background-image: linear-gradient(50deg, $delice_color_primary, $delice_color_secondary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     h2{
       font-family: 'Kalam', serif;
       font-weight: normal;
-      color: #0887FB;
+      color: $delice_color_primary;
     }
     &:hover{
       & .affiche__delice__bg{
@@ -210,34 +162,22 @@ body{
       }
     }
     &__bg {
-      background-color: darken(#f9f9f9, 5);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms ease-in-out;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      @include opacity($delice_background_color);
     }
   }
   &__palette {
-    background-color: #fdfffd;
-    height: 100%;
-    align-items: center;
-    z-index: 1;
-    position: relative;
+    @include background_menu($palette_background_color);
     h1{
       font-family: 'Kaushan script', serif;
       font-weight: normal;
-      background-image: linear-gradient(100deg, #3D9139,  #BFFF7E);
+      background-image: linear-gradient(100deg, $palette_color_primary,  $palette_color_secondary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     h2{
       font-family: 'Kalam', serif;
       font-weight: normal;
-      color: #72BF56;
+      color: $palette_color_primary;
     }
     &:hover{
       & .affiche__palette__bg{
@@ -245,36 +185,8 @@ body{
       }
     }
     &__bg {
-      background-color: darken(#fdfffd, 5);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms ease-in-out;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      @include opacity($palette_background_color);
     }
   }
 }
-
-@keyframes movecircle {
-  from {
-    transform: translateY(0.3em);
-  }
-
-  100% {
-    transform: translateY(-0.3em);
-  }
-}
-@keyframes wiggle {
-  from {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(6px);
-  }
-}
-
 
