@@ -1,15 +1,10 @@
-header, footer, .prochainement {
-  background-color: #569C87;
-}
-header a, footer a, .prochainement a {
-  text-decoration: none;
-  color: #E9C353;
-}
-
 body {
   margin: 0;
 }
 
+.titre {
+  background-color: #569C87;
+}
 .titre h1 {
   margin: 0;
   color: #E9C353;
@@ -25,6 +20,43 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  background-color: #569C87;
+}
+.prochainement a {
+  text-decoration: none;
+  color: #E9C353;
+}
+.prochainement__circle1 {
+  padding: 0 2px 0 5px;
+  width: 0.5em;
+  height: 0.5em;
+  animation-name: movecircle;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+}
+.prochainement__circle2 {
+  padding: 2px;
+  width: 0.5em;
+  height: 0.5em;
+  animation-name: movecircle;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+  animation-delay: 300ms;
+}
+.prochainement__circle3 {
+  padding: 2px;
+  width: 0.5em;
+  height: 0.5em;
+  animation-name: movecircle;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+  animation-delay: 600ms;
 }
 
 .footer {
@@ -35,9 +67,18 @@ body {
   width: 100%;
   height: 40px;
   align-items: center;
+  background-color: #569C87;
 }
-.footer a {
+.footer__text {
+  text-decoration: none;
+  color: #E9C353;
   margin: 5px;
+}
+.footer__text:hover {
+  animation-name: wiggle;
+  animation-duration: 150ms;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
 }
 
 .menu_global {
@@ -52,7 +93,7 @@ body {
   margin: 20px auto;
   text-align: center;
 }
-.menu a {
+.menu__lien {
   height: 100%;
   width: 100%;
   display: block;
@@ -132,6 +173,23 @@ body {
   font-family: "Kalam", serif;
   font-weight: normal;
   color: #72BF56;
+}
+
+@keyframes movecircle {
+  from {
+    transform: translateY(0.3em);
+  }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(6px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

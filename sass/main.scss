@@ -1,21 +1,17 @@
 $primary_color : #569C87;
 $secondary_color : #E9C353;
 
-header,footer,.prochainement{
-  background-color: $primary_color;
-  a{
-    text-decoration: none;
-    color: $secondary_color;
-  }
-}
 body{
   margin: 0;
 }
-.titre h1{
-  margin: 0;
-  color: $secondary_color;
-  text-align: center;
-  font-size: 2.6em;
+.titre{
+  background-color: $primary_color;
+  h1 {
+    margin: 0;
+    color: $secondary_color;
+    text-align: center;
+    font-size: 2.6em;
+  }
 }
 .prochainement{
   width: 60%;
@@ -24,8 +20,46 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px
+  border-radius: 5px;
+  background-color: $primary_color;
+  a{
+    text-decoration: none;
+    color: $secondary_color;
+  }
+  &__circle1{
+    padding: 0 2px 0 5px;
+    width: 0.5em;
+    height: 0.5em;
+    animation-name: movecircle;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+  }
+  &__circle2{
+    padding: 2px;
+    width: 0.5em;
+    height: 0.5em;
+    animation-name: movecircle;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+    animation-delay: 300ms;
+  }
+  &__circle3{
+    padding: 2px;
+    width: 0.5em;
+    height: 0.5em;
+    animation-name: movecircle;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+    animation-delay: 600ms;
+  }
 }
+
 .footer{
   position: fixed;
   display: flex;
@@ -34,9 +68,18 @@ body{
   width: 100%;
   height: 40px;
   align-items: center;
-  a{
+  background-color: $primary_color;
+  &__text {
+    text-decoration: none;
+    color: $secondary_color;
     margin: 5px;
   }
+  &__text:hover {
+    animation-name: wiggle;
+    animation-duration: 150ms;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+   }
 }
 .menu_global{
   display: flex;
@@ -48,7 +91,7 @@ body{
   height:400px;
   margin: 20px auto;
   text-align: center;
-  a{
+  &__lien{
     height: 100%;
     width: 100%;
     display: block;
@@ -61,76 +104,96 @@ body{
     justify-content: center;
     align-items: center;
   }
+  span:hover{
 
-   &__note {
-     background-color: #fcdfdb;
-     height: 100%;
-     align-items: center;
-     img{
-       width: 20%;
-       height: auto;
-     }
-     h1{
-       color: #3c1218;
-       font-family: devonshire, serif;
-       font-weight: normal;
-     }
-     h2{
-       color:#3c1218;
-       font-family: sriracha, serif;
-       font-weight: normal;
-     }
-   }
+  }
+  &__note {
+    background-color: #fcdfdb;
+    height: 100%;
+    align-items: center;
+    img{
+      width: 20%;
+      height: auto;
+    }
+    h1{
+      color: #3c1218;
+      font-family: devonshire, serif;
+      font-weight: normal;
+    }
+    h2{
+      color:#3c1218;
+      font-family: sriracha, serif;
+      font-weight: normal;
+    }
+  }
+  &__chic {
+    background-color: #fff5fe;
+    height: 100%;
+    align-items: center;
+    h1{
+      font-family: Lateef, serif;
+      background-image: linear-gradient(155deg, #D8852E,  #905BFD);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2{
+      font-family: 'Libre Baskerville', serif;
+      color:#D8852E ;
+    }
+  }
+  &__delice {
+    background-color: #f9f9f9;
+    height: 100%;
+    align-items: center;
+    h1{
+      font-family: 'Dancing Script', serif;
+      font-weight: normal;
+      background-image: linear-gradient(50deg, #0431DF,  #0887FB);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2{
+      font-family: 'Kalam', serif;
+      font-weight: normal;
+      color: #0887FB;
+    }
+  }
+  &__palette {
+    background-color: #fdfffd;
+    height: 100%;
+    align-items: center;
+    h1{
+      font-family: 'Kaushan script', serif;
+      font-weight: normal;
+      background-image: linear-gradient(100deg, #3D9139,  #BFFF7E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2{
+      font-family: 'Kalam', serif;
+      font-weight: normal;
+      color: #72BF56;
+    }
+  }
+}
 
-   &__chic {
-     background-color: #fff5fe;
-     height: 100%;
-     align-items: center;
-     h1{
-       font-family: Lateef, serif;
-       background-image: linear-gradient(155deg, #D8852E,  #905BFD);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-     }
-     h2{
-       font-family: 'Libre Baskerville', serif;
-       color:#D8852E ;
-     }
-   }
+@keyframes movecircle {
+  from {
+    transform: translateY(0.3em);
+  }
 
-   &__delice {
-     background-color: #f9f9f9;
-     height: 100%;
-     align-items: center;
-     h1{
-       font-family: 'Dancing Script', serif;
-       font-weight: normal;
-       background-image: linear-gradient(50deg, #0431DF,  #0887FB);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-     }
-     h2{
-       font-family: 'Kalam', serif;
-       font-weight: normal;
-       color: #0887FB;
-     }
-   }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: translateX(0);
+  }
 
-   &__palette {
-     background-color: #fdfffd;
-     height: 100%;
-     align-items: center;
-     h1{
-       font-family: 'Kaushan script', serif;
-       font-weight: normal;
-       background-image: linear-gradient(100deg, #3D9139,  #BFFF7E);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-     }
-     h2{
-       font-family: 'Kalam', serif;
-       font-weight: normal;
-       color: #72BF56;
-     }
-   }
- }
+  100% {
+    transform: translateX(6px);
+  }
+}
+
+
