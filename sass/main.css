@@ -68,6 +68,7 @@ body {
   height: 40px;
   align-items: center;
   background-color: #569C87;
+  z-index: 1;
 }
 .footer__text {
   text-decoration: none;
