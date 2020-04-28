@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+main {
+  margin-bottom: 3.5rem;
+}
+
 .titre {
   background-color: #569C87;
 }
@@ -35,7 +39,7 @@ body {
 .prochainement {
   width: 60%;
   height: 60px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,6 +266,59 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.nom_restaurant {
+  text-align: center;
+}
+
+.note {
+  background-color: #fcdfdb;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  color: #3c1218;
+}
+.note h1, .note h3 {
+  font-weight: normal;
+  font-family: "devonshire", serif;
+  margin: 0.1rem 0 0.1rem 0;
+}
+.note__header {
+  padding-top: 1rem;
+}
+.note__header img {
+  width: 15%;
+  height: auto;
+}
+.note li {
+  list-style-type: none;
+  font-family: "Kalam", serif;
+  font-size: 0.8em;
+}
+.note ul {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
+.note__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.note__titre img {
+  width: 25%;
+}
+.note__bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.note__bottom img {
+  width: 10%;
+  margin-right: 0.5rem;
+}
+.note__bottom h1 {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
