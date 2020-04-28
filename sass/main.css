@@ -321,4 +321,45 @@ main {
   font-size: 1.5em;
 }
 
+.palette {
+  font-family: "Kaushan script", serif;
+  font-weight: normal;
+  background-color: #fdfffd;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+.palette h1, .palette h3 {
+  margin: 0.1rem 0 0.1rem 0;
+}
+.palette__header {
+  padding-top: 1rem;
+}
+.palette__header h1 {
+  background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.palette__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.palette__titre img {
+  width: 25%;
+}
+.palette__titre h3 {
+  font-family: "Kalam", serif;
+  font-weight: normal;
+}
+.palette li {
+  list-style-type: none;
+  font-family: "Kalam", serif;
+  font-size: 0.8em;
+}
+.palette ul {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */

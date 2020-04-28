@@ -248,3 +248,44 @@ main{
     }
   }
 }
+
+.palette{
+  font-family: nth($font,7), serif;
+  font-weight: normal;
+  background-color: $palette_background_color;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  h1,h3 {
+    margin: 0.1rem 0 0.1rem 0;
+  }
+  &__header{
+    h1{
+      background-image: linear-gradient(100deg, $palette_color_primary,  $palette_color_secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    padding-top: 1rem;
+  }
+  &__titre{
+     display: flex;
+     justify-content: space-around;
+     img{
+       width: 25%
+     };
+    h3{
+      font-family: nth($font,6), serif;
+      font-weight: normal;
+    }
+  }
+  li{
+    list-style-type:none;
+    font-family: nth($font,6), serif;
+    font-size: 0.8em;
+  }
+  ul{
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+  }
+}
