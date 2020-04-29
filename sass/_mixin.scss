@@ -18,10 +18,18 @@
   right: 0;
   bottom: 0;
 }
-@mixin background_menu($colour){
+@mixin accueil_background_menu($colour){
   background-color: $colour;
   height: 100%;
   align-items: center;
   z-index: 1;
   position: relative;
+}
+@mixin background_menu($colour){
+  background-color: $colour;
+  box-shadow: 0 0 8px 1px $box_shadow ;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 1rem;
 }

@@ -270,6 +270,7 @@ main {
 
 .nom_restaurant {
   text-align: center;
+  font-size: 1.5em;
 }
 
 .note {
@@ -278,6 +279,7 @@ main {
   width: 80%;
   margin: 20px auto;
   text-align: center;
+  padding-bottom: 1rem;
   color: #3c1218;
 }
 .note h1, .note h3 {
@@ -285,21 +287,21 @@ main {
   font-family: "devonshire", serif;
   margin: 0.1rem 0 0.1rem 0;
 }
+.note li {
+  font-family: "Kalam", serif;
+  list-style-type: none;
+  font-size: 0.8em;
+}
+.note ul {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
 .note__header {
   padding-top: 1rem;
 }
 .note__header img {
   width: 15%;
   height: auto;
-}
-.note li {
-  list-style-type: none;
-  font-family: "Kalam", serif;
-  font-size: 0.8em;
-}
-.note ul {
-  padding: 0 1rem 0 1rem;
-  margin-bottom: 2rem;
 }
 .note__titre {
   display: flex;
@@ -329,37 +331,116 @@ main {
   width: 80%;
   margin: 20px auto;
   text-align: center;
+  padding-bottom: 1rem;
 }
 .palette h1, .palette h3 {
   margin: 0.1rem 0 0.1rem 0;
 }
+.palette h3 {
+  font-size: 1em;
+  font-family: "Kalam", serif;
+}
+.palette li {
+  list-style-type: none;
+  font-size: 0.8em;
+  font-family: "Kalam", serif;
+}
+.palette ul {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
 .palette__header {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .palette__header h1 {
   background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.palette__titre {
+.palette__entree__titre {
   display: flex;
   justify-content: space-around;
 }
-.palette__titre img {
+.palette__entree__titre img {
   width: 25%;
 }
-.palette__titre h3 {
-  font-family: "Kalam", serif;
-  font-weight: normal;
+.palette__plat__titre {
+  display: flex;
+  justify-content: space-around;
 }
-.palette li {
+.palette__plat__titre img {
+  width: 25%;
+}
+.palette__dessert__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.palette__dessert__titre img {
+  width: 25%;
+}
+
+.chic {
+  background-color: #fff5fe;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.chic h1, .chic h3 {
+  margin: 0.1rem 0 0.1rem 0;
+}
+.chic h3 {
+  font-size: 1em;
+}
+.chic li {
   list-style-type: none;
-  font-family: "Kalam", serif;
   font-size: 0.8em;
 }
-.palette ul {
+.chic ul {
   padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
+}
+.chic__header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.chic__header h1 {
+  font-family: "Lateef", serif;
+  background-image: linear-gradient(155deg, #D8852E, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.chic__entree {
+  color: #D8852E;
+}
+.chic__entree__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.chic__entree__titre img {
+  width: 25%;
+}
+.chic__plat {
+  color: #A86AB9;
+}
+.chic__plat__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.chic__plat__titre img {
+  width: 25%;
+}
+.chic__dessert {
+  color: #905BFD;
+}
+.chic__dessert__titre {
+  display: flex;
+  justify-content: space-around;
+}
+.chic__dessert__titre img {
+  width: 25%;
 }
 
 /*# sourceMappingURL=main.css.map */
