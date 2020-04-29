@@ -102,14 +102,18 @@ main{
     align-items: center;
   }
   &__note {
+
     @include accueil_background_menu($note_background_color);
+
     img{
       width: 20%;
       height: auto;
     }
     h1{
       color: $note_color_primary;
+
       font-family: nth($font,1), serif;
+
       font-weight: normal;
     }
     h2{
@@ -127,6 +131,7 @@ main{
     }
   }
   &__chic {
+
     @include accueil_background_menu($chic_background_color);
     h1{
       font-family: nth($font,3), serif;
@@ -135,6 +140,7 @@ main{
       -webkit-text-fill-color: transparent;
     }
     h2{
+
       font-family: nth($font,4), serif;
       color:$chic_color_primary ;
     }
@@ -171,6 +177,7 @@ main{
     }
   }
   &__palette {
+
     @include accueil_background_menu($palette_background_color);
     h1{
       font-family: nth($font,7), serif;
@@ -359,3 +366,4 @@ main{
     }
   }
 }
+
