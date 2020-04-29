@@ -22,7 +22,6 @@ main{
       color: $secondary_color;
     }
   }
-
 }
 .prochainement{
   width: 60%;
@@ -206,164 +205,211 @@ main{
   text-align: center;
   font-size: 1.5em;
 }
-.note{
+.note {
   @include background_menu($note_background_color);
   color: $note_color_primary;
-  h1,h3 {
+
+  h1, h3 {
     font-weight: normal;
-    font-family: nth($font,1), serif;
+    font-family: nth($font, 1), serif;
     margin: 0.1rem 0 0.1rem 0;
   }
-  li{
-    font-family: nth($font,6), serif;
-    list-style-type:none;
-    font-size: 0.8em;
-   }
-  ul{
-    padding: 0 1rem 0 1rem;
-    margin-bottom: 2rem;
-  }
-  &__header{
+
+  &__header {
     padding-top: 1rem;
-    img{
+    padding-bottom: 1rem;
+
+    img {
       width: 15%;
       height: auto;
     }
   }
 
-  &__titre{
-    display: flex;
-    justify-content: space-around;
-    img{
-      width: 25%
-    };
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        font-family: nth($font, 6), serif;
+      }
+    }
   }
-  &__bottom{
+
+  &__bottom {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding-bottom: 2rem;
-    img{
+
+    img {
       width: 10%;
       margin-right: 0.5rem;
     }
-    h1{
+
+    h1 {
       font-size: 1.5em;
     }
   }
 }
-.palette{
-  font-family: nth($font,7), serif;
+.delice {
+  @include background_menu($delice_background_color);
+
+  h1, h3 {
+    margin: 0.1rem 0 0.1rem 0;
+  }
+
+  &__header {
+    h1 {
+      font-family: nth($font, 5), serif;
+      background-image: linear-gradient(155deg, $delice_color_primary, $delice_color_secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+
+    h3 {
+      font-size: 1em;
+      font-family: nth($font, 6), serif;
+      font-weight: normal;
+    }
+
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        font-family: nth($font, 6), serif;
+      }
+    }
+  }
+}
+.chic {
+  @include background_menu($chic_background_color);
+
+  h1, h3 {
+    margin: 0.1rem 0 0.1rem 0;
+  }
+
+  &__header {
+    h1 {
+      font-family: nth($font, 3), serif;
+      background-image: linear-gradient(155deg, $chic_color_primary, $chic_color_secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  &__entree {
+    &--color {
+      color: $chic_color_primary;
+    }
+  }
+
+  &__plat {
+    &--color {
+      color: $chic_color_tertiary;
+    }
+  }
+
+  &__dessert {
+    &--color {
+      color: $chic_color_secondary;
+    }
+  }
+}
+.palette {
+  font-family: nth($font, 7), serif;
   font-weight: normal;
   @include background_menu($palette_background_color);
-  h1,h3 {
+
+  h1, h3 {
     margin: 0.1rem 0 0.1rem 0;
   }
-  h3{
-    font-size: 1em;
-    font-family: nth($font,6), serif;
-  }
-  li{
-    list-style-type: none;
-    font-size: 0.8em;
-    font-family: nth($font,6), serif;
-  }
-  ul{
-    padding: 0 1rem 0 1rem;
-    margin-bottom: 2rem;
-  }
-  &__header{
-    h1{
-      background-image: linear-gradient(100deg, $palette_color_primary,  $palette_color_secondary);
+
+  &__header {
+    h1 {
+      background-image: linear-gradient(100deg, $palette_color_primary, $palette_color_secondary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  &__entree{
-    &__titre{
-       display: flex;
-       justify-content: space-around;
-       img{
-         width: 25%
-       };
-    }
-  }
-  &__plat{
-    &__titre{
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
       display: flex;
       justify-content: space-around;
-      img{
+      align-items: center;
+      img {
         width: 25%
-      };
+      }
     }
-  }
-  &__dessert{
-    &__titre{
-      display: flex;
-      justify-content: space-around;
-      img{
-        width: 25%
-      };
+    h3 {
+      font-size: 1em;
+      font-family: nth($font, 6), serif;
+    }
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        font-family: nth($font, 6), serif;
+      }
     }
   }
 }
-.chic{
-  @include background_menu($chic_background_color);
-  h1,h3 {
-    margin: 0.1rem 0 0.1rem 0;
-  }
-  h3{
-    font-size: 1em;
-  }
-  li{
-    list-style-type: none;
-    font-size: 0.8em;
-  }
-  ul{
-    padding: 0 1rem 0 1rem;
-    margin-bottom: 2rem;
-  }
-  &__header{
-    h1{
-      font-family: nth($font,3), serif;
-      background-image: linear-gradient(155deg, $chic_color_primary,  $chic_color_secondary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  &__entree{
-    color: $chic_color_primary;
-    &__titre{
-      display: flex;
-      justify-content: space-around;
-      img{
-        width: 25%
-      };
-    }
-
-  }
-  &__plat{
-    color: $chic_color_tertiary;
-    &__titre{
-      display: flex;
-      justify-content: space-around;
-      img{
-        width: 25%
-      };
-    }
-  }
-  &__dessert{
-    color: $chic_color_secondary ;
-    &__titre{
-      display: flex;
-      justify-content: space-around;
-      img{
-        width: 25%
-      };
-    }
-  }
-}
-
