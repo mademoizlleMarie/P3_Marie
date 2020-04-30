@@ -1,0 +1,45 @@
+.delice {
+  @include background_menu($delice_background_color);
+
+  h1, h3 {
+    margin: 0.1rem 0 0.1rem 0;
+  }
+
+  &__header {
+    h1 {
+      font-family: $font5;
+      @include text-gradient(map_get($deg,deg2), $delice_color_primary, $delice_color_secondary);
+
+    }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+
+    h3 {
+      font-size: 1em;
+      font-family: $font6;
+      font-weight: normal;
+    }
+
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        font-family:$font6;
+      }
+    }
+  }
+}

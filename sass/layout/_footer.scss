@@ -1,0 +1,22 @@
+.footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  background-color: $primary_color;
+  z-index: 1;
+  &__text {
+    text-decoration: none;
+    color: $secondary_color;
+    margin: 5px;
+  }
+  &__text:hover {
+    animation-name: wiggle;
+    animation-duration: 150ms;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+  }
+}

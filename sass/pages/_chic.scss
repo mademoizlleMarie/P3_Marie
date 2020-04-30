@@ -1,0 +1,61 @@
+.chic {
+  @include background_menu($chic_background_color);
+
+  h1, h3 {
+    margin: 0.1rem 0 0.1rem 0;
+  }
+
+  &__header {
+    h1 {
+      font-family: $font3;
+      @include text-gradient(map_get($deg,deg2), $chic_color_primary, $chic_color_secondary);
+
+    }
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  &__entree {
+    &--color {
+      color: $chic_color_primary;
+    }
+  }
+
+  &__plat {
+    &--color {
+      color: $chic_color_tertiary;
+    }
+  }
+
+  &__dessert {
+    &--color {
+      color: $chic_color_secondary;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+
+.affiche_global{
+  display: flex;
+  flex-direction: column;
+}
+
+.affiche{
+  box-shadow: 0 0 8px 1px $box_shadow ;
+  width: 80%;
+  height:400px;
+  margin: 20px auto;
+  text-align: center;
+  &__lien{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    & span:hover{
+      transform: scale(1.2);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+  span{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__note {
+
+    @include accueil_background_menu($note_background_color);
+
+    img{
+      width: 20%;
+      height: auto;
+    }
+    h1{
+      color: $note_color_primary;
+      font-family: $font1;
+      font-weight: normal;
+    }
+    h2{
+      color:$note_color_primary;
+      font-family: $font2;
+      font-weight: normal;
+    }
+    &:hover{
+      & .affiche__note__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      @include opacity($note_background_color);
+    }
+  }
+  &__chic {
+
+    @include accueil_background_menu($chic_background_color);
+    h1{
+      font-family: $font3;
+      @include text-gradient(map_get($deg,deg2),$chic_color_primary,$chic_color_secondary);
+    }
+    h2{
+
+      font-family: $font4;
+      color:$chic_color_primary ;
+    }
+    &:hover{
+      & .affiche__chic__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      @include opacity($chic_background_color);
+    }
+  }
+  &__delice {
+    @include accueil_background_menu($delice_background_color);
+    h1{
+      font-family: $font5;
+      font-weight: normal;
+      @include text-gradient(map_get($deg,deg3), $delice_color_primary, $delice_color_primary);
+    }
+    h2{
+      font-family: $font6;
+      font-weight: normal;
+      color: $delice_color_primary;
+    }
+    &:hover{
+      & .affiche__delice__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      @include opacity($delice_background_color);
+    }
+  }
+  &__palette {
+
+    @include accueil_background_menu($palette_background_color);
+    h1{
+      font-family: $font7;
+      font-weight: normal;
+      @include text-gradient(map_get($deg,deg1), $palette_color_primary,  $palette_color_secondary);
+    }
+    h2{
+      font-family:$font6;
+      font-weight: normal;
+      color: $palette_color_primary;
+    }
+    &:hover{
+      & .affiche__palette__bg{
+        opacity: 1;
+      }
+    }
+    &__bg {
+      @include opacity($palette_background_color);
+    }
+  }
+}

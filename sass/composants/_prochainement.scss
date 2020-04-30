@@ -1,0 +1,28 @@
+.prochainement{
+  width: 60%;
+  height: 60px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $primary_color;
+  a{
+    text-decoration: none;
+    color: $secondary_color;
+  }
+  &__circle1{
+    padding: 0 2px 0 5px;
+    @include circle
+  }
+  &__circle2{
+    padding: 2px;
+    @include circle;
+    animation-delay: 300ms;
+  }
+  &__circle3{
+    padding: 2px;
+    @include circle;
+    animation-delay: 600ms;
+  }
+}

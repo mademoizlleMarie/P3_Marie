@@ -22,24 +22,10 @@ main {
   margin-bottom: 3.5rem;
 }
 
-.titre {
-  background-color: #569C87;
-}
-.titre h1 {
-  margin: 0;
-  color: #E9C353;
-  text-align: center;
-  font-size: 2.6em;
-}
-.titre h1 a {
-  text-decoration: none;
-  color: #E9C353;
-}
-
 .prochainement {
   width: 60%;
   height: 60px;
-  margin: 0 auto 0px auto;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +92,25 @@ main {
   transition-timing-function: linear;
 }
 
+.titre {
+  background-color: #569C87;
+}
+.titre h1 {
+  margin: 0;
+  color: #E9C353;
+  text-align: center;
+  font-size: 2.6em;
+}
+.titre h1 a {
+  text-decoration: none;
+  color: #E9C353;
+}
+
+.nom_restaurant {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .affiche_global {
   display: flex;
   flex-direction: column;
@@ -148,12 +153,12 @@ main {
 }
 .affiche__note h1 {
   color: #3c1218;
-  font-family: "devonshire", serif;
+  font-family: "devonshire", "serif";
   font-weight: normal;
 }
 .affiche__note h2 {
   color: #3c1218;
-  font-family: "sriracha", serif;
+  font-family: "sriracha", "serif";
   font-weight: normal;
 }
 .affiche__note:hover .affiche__note__bg {
@@ -178,13 +183,13 @@ main {
   position: relative;
 }
 .affiche__chic h1 {
-  font-family: "Lateef", serif;
+  font-family: "Lateef", "serif";
   background-image: linear-gradient(155deg, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .affiche__chic h2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", "serif";
   color: #D8852E;
 }
 .affiche__chic:hover .affiche__chic__bg {
@@ -209,14 +214,14 @@ main {
   position: relative;
 }
 .affiche__delice h1 {
-  font-family: "Dancing Script", serif;
+  font-family: "Dancing Script", "serif";
   font-weight: normal;
-  background-image: linear-gradient(50deg, #0431DF, #0887FB);
+  background-image: linear-gradient(50deg, #0431DF, #0431DF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .affiche__delice h2 {
-  font-family: "Kalam", serif;
+  font-family: "Kalam", "serif";
   font-weight: normal;
   color: #0431DF;
 }
@@ -242,14 +247,14 @@ main {
   position: relative;
 }
 .affiche__palette h1 {
-  font-family: "Kaushan script", serif;
+  font-family: "Kaushan script", "serif";
   font-weight: normal;
   background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .affiche__palette h2 {
-  font-family: "Kalam", serif;
+  font-family: "Kalam", "serif";
   font-weight: normal;
   color: #3D9139;
 }
@@ -268,107 +273,6 @@ main {
   bottom: 0;
 }
 
-.nom_restaurant {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.note {
-  background-color: #fcdfdb;
-  box-shadow: 0 0 8px 1px #a2a5a4;
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: #3c1218;
-}
-.note h1, .note h3 {
-  font-weight: normal;
-  font-family: "devonshire", serif;
-  margin: 0.1rem 0 0.1rem 0;
-}
-.note__header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.note__header img {
-  width: 15%;
-  height: auto;
-}
-.note__entree__titre, .note__plat__titre, .note__dessert__titre {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.note__entree__titre img, .note__plat__titre img, .note__dessert__titre img {
-  width: 25%;
-}
-.note__entree__detail, .note__plat__detail, .note__dessert__detail {
-  padding: 0 1rem 0 1rem;
-  margin-bottom: 2rem;
-}
-.note__entree__detail li, .note__plat__detail li, .note__dessert__detail li {
-  list-style-type: none;
-  font-size: 0.8em;
-  font-family: "Kalam", serif;
-}
-.note__bottom {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-}
-.note__bottom img {
-  width: 10%;
-  margin-right: 0.5rem;
-}
-.note__bottom h1 {
-  font-size: 1.5em;
-}
-
-.delice {
-  background-color: #f9f9f9;
-  box-shadow: 0 0 8px 1px #a2a5a4;
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-  padding-bottom: 1rem;
-}
-.delice h1, .delice h3 {
-  margin: 0.1rem 0 0.1rem 0;
-}
-.delice__header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.delice__header h1 {
-  font-family: "Dancing Script", serif;
-  background-image: linear-gradient(155deg, #0431DF, #0887FB);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.delice__entree__titre, .delice__plat__titre, .delice__dessert__titre {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.delice__entree__titre img, .delice__plat__titre img, .delice__dessert__titre img {
-  width: 25%;
-}
-.delice__entree h3, .delice__plat h3, .delice__dessert h3 {
-  font-size: 1em;
-  font-family: "Kalam", serif;
-  font-weight: normal;
-}
-.delice__entree__detail, .delice__plat__detail, .delice__dessert__detail {
-  padding: 0 1rem 0 1rem;
-  margin-bottom: 2rem;
-}
-.delice__entree__detail li, .delice__plat__detail li, .delice__dessert__detail li {
-  list-style-type: none;
-  font-size: 0.8em;
-  font-family: "Kalam", serif;
-}
-
 .chic {
   background-color: #fff5fe;
   box-shadow: 0 0 8px 1px #a2a5a4;
@@ -385,7 +289,7 @@ main {
   padding-bottom: 1rem;
 }
 .chic__header h1 {
-  font-family: "Lateef", serif;
+  font-family: "Lateef", "serif";
   background-image: linear-gradient(155deg, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -419,8 +323,116 @@ main {
   color: #905BFD;
 }
 
+.delice {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.delice h1, .delice h3 {
+  margin: 0.1rem 0 0.1rem 0;
+}
+.delice__header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.delice__header h1 {
+  font-family: "Dancing Script", "serif";
+  background-image: linear-gradient(155deg, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delice__entree__titre, .delice__plat__titre, .delice__dessert__titre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.delice__entree__titre img, .delice__plat__titre img, .delice__dessert__titre img {
+  width: 25%;
+}
+.delice__entree h3, .delice__plat h3, .delice__dessert h3 {
+  font-size: 1em;
+  font-family: "Kalam", "serif";
+  font-weight: normal;
+}
+.delice__entree__detail, .delice__plat__detail, .delice__dessert__detail {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
+.delice__entree__detail li, .delice__plat__detail li, .delice__dessert__detail li {
+  list-style-type: none;
+  font-size: 0.8em;
+  font-family: "Kalam", "serif";
+}
+
+.mentionslegales {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.mentionslegales H1, .mentionslegales H3, .mentionslegales h4 {
+  text-align: center;
+}
+.mentionslegales p {
+  text-align: justify;
+}
+
+.note {
+  background-color: #fcdfdb;
+  box-shadow: 0 0 8px 1px #a2a5a4;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #3c1218;
+}
+.note h1, .note h3 {
+  font-weight: normal;
+  font-family: "devonshire", "serif";
+  margin: 0.1rem 0 0.1rem 0;
+}
+.note__header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.note__header img {
+  width: 15%;
+  height: auto;
+}
+.note__entree__titre, .note__plat__titre, .note__dessert__titre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.note__entree__titre img, .note__plat__titre img, .note__dessert__titre img {
+  width: 25%;
+}
+.note__entree__detail, .note__plat__detail, .note__dessert__detail {
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 2rem;
+}
+.note__entree__detail li, .note__plat__detail li, .note__dessert__detail li {
+  list-style-type: none;
+  font-size: 0.8em;
+  font-family: "Kalam", "serif";
+}
+.note__bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.note__bottom img {
+  width: 10%;
+  margin-right: 0.5rem;
+}
+.note__bottom h1 {
+  font-size: 1.5em;
+}
+
 .palette {
-  font-family: "Kaushan script", serif;
+  font-family: "Kaushan script", "serif";
   font-weight: normal;
   background-color: #fdfffd;
   box-shadow: 0 0 8px 1px #a2a5a4;
@@ -451,7 +463,7 @@ main {
 }
 .palette__entree h3, .palette__plat h3, .palette__dessert h3 {
   font-size: 1em;
-  font-family: "Kalam", serif;
+  font-family: "Kalam", "serif";
 }
 .palette__entree__detail, .palette__plat__detail, .palette__dessert__detail {
   padding: 0 1rem 0 1rem;
@@ -460,19 +472,7 @@ main {
 .palette__entree__detail li, .palette__plat__detail li, .palette__dessert__detail li {
   list-style-type: none;
   font-size: 0.8em;
-  font-family: "Kalam", serif;
-}
-
-.mentionslegales {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 3rem;
-}
-.mentionslegales H1, .mentionslegales H3, .mentionslegales h4 {
-  text-align: center;
-}
-.mentionslegales p {
-  text-align: justify;
+  font-family: "Kalam", "serif";
 }
 
 /*# sourceMappingURL=main.css.map */

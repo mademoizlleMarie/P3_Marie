@@ -1,0 +1,55 @@
+.note {
+  @include background_menu($note_background_color);
+  color: $note_color_primary;
+
+  h1, h3 {
+    font-weight: normal;
+    font-family: $font1;
+    margin: 0.1rem 0 0.1rem 0;
+  }
+
+  &__header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    img {
+      width: 15%;
+      height: auto;
+    }
+  }
+
+  &__entree, &__plat, &__dessert {
+    &__titre {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 25%
+      }
+    }
+    &__detail {
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 2rem;
+      li {
+        list-style-type: none;
+        font-size: 0.8em;
+        font-family: $font6;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    img {
+      width: 10%;
+      margin-right: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+}
