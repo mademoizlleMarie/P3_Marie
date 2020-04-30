@@ -463,4 +463,16 @@ main {
   font-family: "Kalam", serif;
 }
 
+.mentionslegales {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+.mentionslegales H1, .mentionslegales H3, .mentionslegales h4 {
+  text-align: center;
+}
+.mentionslegales p {
+  text-align: justify;
+}
+
 /*# sourceMappingURL=main.css.map */
