@@ -105,6 +105,11 @@ main {
   text-decoration: none;
   color: #E9C353;
 }
+@media screen and (max-width: 450px) {
+  .titre {
+    grid-template-columns: 1fr;
+  }
+}
 
 .nom_restaurant {
   text-align: center;
@@ -119,7 +124,7 @@ main {
 .affiche {
   box-shadow: 0 0 8px 1px #a2a5a4;
   width: 80%;
-  height: 400px;
+  height: 300px;
   margin: 20px auto;
   text-align: center;
 }

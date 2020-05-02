@@ -11,6 +11,9 @@
       color: $secondary_color;
     }
   }
+  @include tablette-only{
+    grid-template-columns: 1fr;
+  }
 }
 
 //pages/restaurant
