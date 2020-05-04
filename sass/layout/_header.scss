@@ -1,6 +1,12 @@
 //index.html
 .titre{
   background-color: $primary_color;
+  @include pc-only(){
+    height:6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   h1 {
     margin: 0;
     color: $secondary_color;

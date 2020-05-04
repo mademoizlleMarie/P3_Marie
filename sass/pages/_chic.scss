@@ -3,24 +3,24 @@
 
   h1, h3 {
     margin: 0.1rem 0 0.1rem 0;
+
   }
 
   &__header {
     h1 {
       font-family: $font3;
-      @include text-gradient(map_get($deg,deg2), $chic_color_primary, $chic_color_secondary);
-
+      @include text-gradient(map_get($deg,deg2),$chic_color_primary,$chic_color_secondary);
+      @include pc-only(){
+        font-size: map_get($fontsize,fontsize2-5);
+      }
     }
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    @include headerpage
   }
 
   &__entree, &__plat, &__dessert {
     &__titre {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      @include positiontitresectionpage;
       img {
         width: 25%
       }
@@ -28,15 +28,15 @@
 
     h3 {
       font-size: 1em;
+      @include pc-only(){
+        font-size: map_get($fontsize,fontsize2);
+      }
     }
 
     &__detail {
-      padding: 0 1rem 0 1rem;
-      margin-bottom: 2rem;
-
-      li {
-        list-style-type: none;
-        font-size: 0.8em;
+      @include positionstylelistedetailpage;
+      @include pc-only(){
+        font-size: map_get($fontsize,fontsize1-5);
       }
     }
   }

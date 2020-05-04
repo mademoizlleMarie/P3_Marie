@@ -2,6 +2,9 @@
 .affiche_global{
   display: flex;
   flex-direction: column;
+    @include pc-only(){
+      flex-direction: row;
+  }
 }
 
 .affiche{
@@ -10,6 +13,10 @@
   height:300px;
   margin: 20px auto;
   text-align: center;
+  @include pc-only(){
+    height:500px;
+    margin: 30px 20px;
+  }
   &__lien{
     height: 100%;
     width: 100%;
@@ -18,6 +25,7 @@
     & span:hover{
       transform: scale(1.2);
       transition: transform 500ms ease-in-out;
+      opacity: 0.8;
     }
   }
   span{

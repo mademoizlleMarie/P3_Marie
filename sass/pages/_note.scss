@@ -6,33 +6,41 @@
     font-weight: normal;
     font-family: $font1;
     margin: 0.1rem 0 0.1rem 0;
+    @include pc-only(){
+      font-size: map_get($fontsize,fontsize2);
+    }
   }
 
   &__header {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    @include headerpage;
 
     img {
       width: 15%;
       height: auto;
+      @include pc-only() {
+        width: 8%
+      }
     }
+
   }
 
   &__entree, &__plat, &__dessert {
     &__titre {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      @include positiontitresectionpage;
+
       img {
-        width: 25%
+        width: 25%;
+        @include pc-only(){
+          width: 35%
+        }
       }
     }
     &__detail {
-      padding: 0 1rem 0 1rem;
-      margin-bottom: 2rem;
+      @include positionstylelistedetailpage;
       li {
-        list-style-type: none;
-        font-size: 0.8em;
+        @include pc-only(){
+          font-size: map_get($fontsize,fontsize1-5);
+        }
         font-family: $font6;
       }
     }
@@ -46,10 +54,16 @@
     img {
       width: 10%;
       margin-right: 0.5rem;
+      @include pc-only(){
+        width: 7%
+      }
     }
 
     h1 {
       font-size: 1.5em;
+      @include pc-only(){
+        font-size: map_get($fontsize,fontsize2);
+      }
     }
   }
 }
