@@ -21,7 +21,7 @@ body {
 main {
   margin-bottom: 3.5rem;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   main {
     margin-bottom: 5rem;
   }
@@ -37,7 +37,7 @@ main {
   border-radius: 5px;
   background-color: #569C87;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .prochainement {
     width: 50%;
   }
@@ -46,7 +46,12 @@ main {
   text-decoration: none;
   color: #E9C353;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
+  .prochainement a {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
   .prochainement a {
     font-size: 1.5em;
   }
@@ -95,7 +100,13 @@ main {
   background-color: #569C87;
   z-index: 1;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
+  .footer {
+    font-size: 1.2em;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
   .footer {
     font-size: 1.2em;
     height: 50px;
@@ -116,7 +127,15 @@ main {
 .titre {
   background-color: #569C87;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
+  .titre {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
   .titre {
     height: 6rem;
     display: flex;
@@ -134,11 +153,6 @@ main {
   text-decoration: none;
   color: #E9C353;
 }
-@media screen and (min-width: 450px) {
-  .titre {
-    grid-template-columns: 1fr;
-  }
-}
 
 .nom_restaurant {
   text-align: center;
@@ -149,9 +163,16 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .affiche_global {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .affiche_global {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -162,17 +183,24 @@ main {
   margin: 20px auto;
   text-align: center;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .affiche {
     height: 500px;
     margin: 30px 20px;
   }
 }
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .affiche {
+    width: 43%;
+    margin: 20px;
+  }
+}
 .affiche__lien {
   height: 100%;
   width: 100%;
-  display: block;
+  display: flex;
   text-decoration: none;
+  justify-content: center;
 }
 .affiche__lien span:hover {
   transform: scale(1.2);
@@ -180,7 +208,6 @@ main {
   opacity: 0.8;
 }
 .affiche span {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,9 +367,14 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .chic__header h1 {
     font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .chic__header h1 {
+    font-size: 2em;
   }
 }
 .chic__entree__titre, .chic__plat__titre, .chic__dessert__titre {
@@ -356,7 +388,12 @@ main {
 .chic__entree h3, .chic__plat h3, .chic__dessert h3 {
   font-size: 1em;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .chic__entree h3, .chic__plat h3, .chic__dessert h3 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
   .chic__entree h3, .chic__plat h3, .chic__dessert h3 {
     font-size: 2em;
   }
@@ -365,15 +402,48 @@ main {
   padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .chic__entree__detail, .chic__plat__detail, .chic__dessert__detail {
     font-size: 1.5em;
   }
 }
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .chic__entree__detail, .chic__plat__detail, .chic__dessert__detail {
+    font-size: 1em;
+  }
+}
+.chic__entree__detail .nomPlat, .chic__plat__detail .nomPlat, .chic__dessert__detail .nomPlat {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .chic__entree__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chic__entree__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .chic__entree--color {
   color: #D8852E;
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .chic__plat__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chic__plat__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .chic__plat--color {
   color: #A86AB9;
@@ -403,7 +473,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .delice__header h1 {
     font-size: 2.5em;
   }
@@ -421,7 +491,7 @@ main {
   font-family: "Kalam", "serif";
   font-weight: normal;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .delice__entree h3, .delice__plat h3, .delice__dessert h3 {
     font-size: 2em;
   }
@@ -430,14 +500,29 @@ main {
   padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
-.delice__entree__detail li, .delice__plat__detail li, .delice__dessert__detail li {
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .delice__entree__detail, .delice__plat__detail, .delice__dessert__detail {
+    font-size: 1em;
+  }
+}
+.delice__entree__detail .nomPlat, .delice__plat__detail .nomPlat, .delice__dessert__detail .nomPlat {
+  display: flex;
+  flex-direction: column;
   font-family: "Kalam", "serif";
 }
-@media screen and (min-width: 550px) {
-  .delice__entree__detail li, .delice__plat__detail li, .delice__dessert__detail li {
+@media screen and (min-width: 1200px) {
+  .delice__entree__detail .nomPlat, .delice__plat__detail .nomPlat, .delice__dessert__detail .nomPlat {
     font-size: 1.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .delice__entree__detail .nomPlat, .delice__plat__detail .nomPlat, .delice__dessert__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -467,7 +552,7 @@ main {
   font-family: "devonshire", "serif";
   margin: 0.1rem 0 0.1rem 0;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .note h1, .note h3 {
     font-size: 2em;
   }
@@ -480,7 +565,7 @@ main {
   width: 15%;
   height: auto;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .note__header img {
     width: 8%;
   }
@@ -493,7 +578,7 @@ main {
 .note__entree__titre img, .note__plat__titre img, .note__dessert__titre img {
   width: 25%;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .note__entree__titre img, .note__plat__titre img, .note__dessert__titre img {
     width: 35%;
   }
@@ -502,14 +587,28 @@ main {
   padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
-.note__entree__detail li, .note__plat__detail li, .note__dessert__detail li {
+.note__entree__detail .nomPlat, .note__plat__detail .nomPlat, .note__dessert__detail .nomPlat {
+  display: flex;
+  flex-direction: column;
   font-family: "Kalam", "serif";
 }
-@media screen and (min-width: 550px) {
-  .note__entree__detail li, .note__plat__detail li, .note__dessert__detail li {
+@media screen and (min-width: 1200px) {
+  .note__entree__detail .nomPlat, .note__plat__detail .nomPlat, .note__dessert__detail .nomPlat {
     font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .note__entree__detail .nomPlat, .note__plat__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .note__entree__detail .nomPlat, .note__plat__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .note__bottom {
@@ -521,7 +620,7 @@ main {
   width: 10%;
   margin-right: 0.5rem;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .note__bottom img {
     width: 7%;
   }
@@ -529,7 +628,7 @@ main {
 .note__bottom h1 {
   font-size: 1.5em;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .note__bottom h1 {
     font-size: 2em;
   }
@@ -557,7 +656,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .palette__header h1 {
     font-size: 2.5em;
   }
@@ -567,7 +666,7 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .palette__entree__titre, .palette__plat__titre, .palette__dessert__titre {
     font-size: 2em;
   }
@@ -579,7 +678,7 @@ main {
   font-size: 1em;
   font-family: "Kalam", "serif";
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1200px) {
   .palette__entree h3, .palette__plat h3, .palette__dessert h3 {
     font-size: 1.5em;
   }
@@ -588,14 +687,29 @@ main {
   padding: 0 1rem 0 1rem;
   margin-bottom: 2rem;
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
-.palette__entree__detail li, .palette__plat__detail li, .palette__dessert__detail li {
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .palette__entree__detail, .palette__plat__detail, .palette__dessert__detail {
+    font-size: 1em;
+  }
+}
+.palette__entree__detail .nomPlat, .palette__plat__detail .nomPlat, .palette__dessert__detail .nomPlat {
+  display: flex;
+  flex-direction: column;
   font-family: "Kalam", "serif";
 }
-@media screen and (min-width: 550px) {
-  .palette__entree__detail li, .palette__plat__detail li, .palette__dessert__detail li {
+@media screen and (min-width: 1200px) {
+  .palette__entree__detail .nomPlat, .palette__plat__detail .nomPlat, .palette__dessert__detail .nomPlat {
     font-size: 1.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .palette__entree__detail .nomPlat, .palette__plat__detail .nomPlat, .palette__dessert__detail .nomPlat {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

@@ -37,10 +37,21 @@
     }
     &__detail {
       @include positionstylelistedetailpage;
-      li {
+      @include tablette-only(){
+        font-size: map_get($fontsize,fontsize1);
+      }
+      .nomPlat {
+        display: flex;
+        flex-direction: column;
         font-family: $font6;
         @include pc-only(){
           font-size: map_get($fontsize,fontsize1-5);
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        @include tablette-only(){
+          flex-direction: row;
+          justify-content: space-between;
         }
       }
     }

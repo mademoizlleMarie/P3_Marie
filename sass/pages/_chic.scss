@@ -13,6 +13,9 @@
       @include pc-only(){
         font-size: map_get($fontsize,fontsize2-5);
       }
+      @include tablette-only() {
+        font-size: map_get($fontsize, fontsize2);
+      }
     }
 
     @include headerpage
@@ -21,33 +24,70 @@
   &__entree, &__plat, &__dessert {
     &__titre {
       @include positiontitresectionpage;
+
       img {
         width: 25%
       }
     }
 
     h3 {
-      font-size: 1em;
-      @include pc-only(){
-        font-size: map_get($fontsize,fontsize2);
+      font-size: map_get($fontsize, fontsize1);
+      @include tablette-only() {
+        font-size: map_get($fontsize, fontsize1-5);
+      }
+      @include pc-only() {
+        font-size: map_get($fontsize, fontsize2);
       }
     }
 
     &__detail {
       @include positionstylelistedetailpage;
-      @include pc-only(){
-        font-size: map_get($fontsize,fontsize1-5);
+      @include pc-only() {
+        font-size: map_get($fontsize, fontsize1-5);
       }
+      @include tablette-only() {
+        font-size: map_get($fontsize, fontsize1);
+      }
+
+      .nomPlat {
+        display: flex;
+        flex-direction: column;
+      }
+
     }
   }
 
   &__entree {
+    &__detail {
+      .nomPlat {
+        @include tablette-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        @include pc-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
     &--color {
       color: $chic_color_primary;
     }
   }
 
   &__plat {
+    &__detail {
+      .nomPlat {
+        @include tablette-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        @include pc-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
     &--color {
       color: $chic_color_tertiary;
     }

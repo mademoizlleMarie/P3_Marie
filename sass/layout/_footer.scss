@@ -12,6 +12,10 @@
     font-size: 1.2em;
     height: 50px;
   }
+  @include tablette-only(){
+    font-size: 1.2em;
+    height: 50px;
+  }
   &__text {
     text-decoration: none;
     color: $secondary_color;

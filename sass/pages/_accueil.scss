@@ -1,9 +1,14 @@
 
-.affiche_global{
+.affiche_global {
   display: flex;
   flex-direction: column;
-    @include pc-only(){
-      flex-direction: row;
+  @include pc-only() {
+    flex-direction: row;
+  }
+  @include tablette-only() {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -13,15 +18,21 @@
   height:300px;
   margin: 20px auto;
   text-align: center;
-  @include pc-only(){
-    height:500px;
+  @include pc-only() {
+    height: 500px;
     margin: 30px 20px;
   }
+  @include tablette-only() {
+    width: 43%;
+    margin: 20px;
+  }
+
   &__lien{
     height: 100%;
     width: 100%;
-    display: block;
+    display: flex;
     text-decoration: none;
+    justify-content: center;
     & span:hover{
       transform: scale(1.2);
       transition: transform 500ms ease-in-out;
@@ -29,7 +40,6 @@
     }
   }
   span{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

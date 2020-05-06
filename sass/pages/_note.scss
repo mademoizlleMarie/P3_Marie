@@ -37,11 +37,27 @@
     }
     &__detail {
       @include positionstylelistedetailpage;
-      li {
+      .nomPlat {
+        display: flex;
+        flex-direction: column;
         @include pc-only(){
           font-size: map_get($fontsize,fontsize1-5);
         }
         font-family: $font6;
+      }
+    }
+  }
+  &__entree, &__plat {
+    &__detail {
+      .nomPlat {
+        @include tablette-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        @include pc-only() {
+          flex-direction: row;
+          justify-content: space-between;
+        }
       }
     }
   }

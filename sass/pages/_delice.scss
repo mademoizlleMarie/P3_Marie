@@ -8,17 +8,19 @@
   &__header {
     h1 {
       font-family: $font5;
-      @include text-gradient(map_get($deg,deg2), $delice_color_primary, $delice_color_secondary);
-      @include pc-only(){
-        font-size: map_get($fontsize,fontsize2-5);
+      @include text-gradient(map_get($deg, deg2), $delice_color_primary, $delice_color_secondary);
+      @include pc-only() {
+        font-size: map_get($fontsize, fontsize2-5);
       }
     }
+
     @include headerpage
   }
 
   &__entree, &__plat, &__dessert {
     &__titre {
       @include positiontitresectionpage;
+
       img {
         width: 25%
       }
@@ -28,17 +30,29 @@
       font-size: 1em;
       font-family: $font6;
       font-weight: normal;
-      @include pc-only(){
-        font-size: map_get($fontsize,fontsize2);
+      @include pc-only() {
+        font-size: map_get($fontsize, fontsize2);
       }
     }
 
     &__detail {
       @include positionstylelistedetailpage;
-      li {
-        font-family:$font6;
-        @include pc-only(){
-          font-size: map_get($fontsize,fontsize1-5);
+      @include tablette-only() {
+        font-size: map_get($fontsize, fontsize1);
+      }
+
+      .nomPlat {
+        display: flex;
+        flex-direction: column;
+        font-family: $font6;
+        @include pc-only() {
+          font-size: map_get($fontsize, fontsize1-5);
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        @include tablette-only() {
+          flex-direction: row;
+          justify-content: space-between;
         }
       }
     }

@@ -14,6 +14,9 @@
     @include pc-only(){
       font-size: 1.5em;
     }
+    @include tablette-only(){
+      font-size: 1.5em;
+    }
     text-decoration: none;
     color: $secondary_color;
   }

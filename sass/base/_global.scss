@@ -3,6 +3,7 @@ body{
 }
 main{
   margin-bottom: 3.5rem;
+
   @include pc-only(){
     margin-bottom: 5rem;
   }
