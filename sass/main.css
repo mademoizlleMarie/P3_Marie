@@ -208,7 +208,7 @@ main {
   text-decoration: none;
   justify-content: center;
 }
-.affiche span {
+.affiche__lien div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,7 +216,7 @@ main {
   transform: scale(1);
   transition: transform 500ms ease-in-out;
 }
-.affiche span:hover {
+.affiche__lien div:hover {
   transform: scale(1.2);
   opacity: 0.8;
 }
@@ -231,12 +231,12 @@ main {
   width: 20%;
   height: auto;
 }
-.affiche__note h1 {
+.affiche__note h2 {
   color: #3c1218;
   font-family: "devonshire", "serif";
   font-weight: normal;
 }
-.affiche__note h2 {
+.affiche__note h3 {
   color: #3c1218;
   font-family: "sriracha", "serif";
   font-weight: normal;
@@ -262,13 +262,13 @@ main {
   z-index: 1;
   position: relative;
 }
-.affiche__chic h1 {
+.affiche__chic h2 {
   font-family: "Lateef", "serif";
   background-image: linear-gradient(155deg, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.affiche__chic h2 {
+.affiche__chic h3 {
   font-family: "Libre Baskerville", "serif";
   color: #D8852E;
 }
@@ -293,14 +293,14 @@ main {
   z-index: 1;
   position: relative;
 }
-.affiche__delice h1 {
+.affiche__delice h2 {
   font-family: "Dancing Script", "serif";
   font-weight: normal;
   background-image: linear-gradient(50deg, #0431DF, #0431DF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.affiche__delice h2 {
+.affiche__delice h3 {
   font-family: "Kalam", "serif";
   font-weight: normal;
   color: #0431DF;
@@ -326,14 +326,14 @@ main {
   z-index: 1;
   position: relative;
 }
-.affiche__palette h1 {
+.affiche__palette h2 {
   font-family: "Kaushan script", "serif";
   font-weight: normal;
   background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.affiche__palette h2 {
+.affiche__palette h3 {
   font-family: "Kalam", "serif";
   font-weight: normal;
   color: #3D9139;

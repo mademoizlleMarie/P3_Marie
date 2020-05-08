@@ -33,21 +33,20 @@
     display: flex;
     text-decoration: none;
     justify-content: center;
-
-
-  }
-  span{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1);
-    transition: transform 500ms ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-      opacity: 0.8;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: scale(1);
+      transition: transform 500ms ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
     }
   }
+
   &__note {
 
     @include accueil_background_menu($note_background_color);
@@ -56,12 +55,12 @@
       width: 20%;
       height: auto;
     }
-    h1{
+    h2{
       color: $note_color_primary;
       font-family: $font1;
       font-weight: normal;
     }
-    h2{
+    h3{
       color:$note_color_primary;
       font-family: $font2;
       font-weight: normal;
@@ -78,11 +77,11 @@
   &__chic {
 
     @include accueil_background_menu($chic_background_color);
-    h1{
+    h2{
       font-family: $font3;
       @include text-gradient(map_get($deg,deg2),$chic_color_primary,$chic_color_secondary);
     }
-    h2{
+    h3{
 
       font-family: $font4;
       color:$chic_color_primary ;
@@ -98,12 +97,12 @@
   }
   &__delice {
     @include accueil_background_menu($delice_background_color);
-    h1{
+    h2{
       font-family: $font5;
       font-weight: normal;
       @include text-gradient(map_get($deg,deg3), $delice_color_primary, $delice_color_primary);
     }
-    h2{
+    h3{
       font-family: $font6;
       font-weight: normal;
       color: $delice_color_primary;
@@ -120,12 +119,12 @@
   &__palette {
 
     @include accueil_background_menu($palette_background_color);
-    h1{
+    h2{
       font-family: $font7;
       font-weight: normal;
       @include text-gradient(map_get($deg,deg1), $palette_color_primary,  $palette_color_secondary);
     }
-    h2{
+    h3{
       font-family:$font6;
       font-weight: normal;
       color: $palette_color_primary;
