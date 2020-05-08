@@ -1,19 +1,25 @@
 //index.html
-.titre{
+.header{
   background-color: $primary_color;
   @include pc-only(){
     height:6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &__titre{
+      font-size: 5em;
+    }
   }
   @include tablette-only{
      height:6rem;
      display: flex;
      flex-direction: column;
      justify-content: center;
+    &__titre{
+      font-size: 3.5em;
+    }
    }
-  h1 {
+  &__titre{
     margin: 0;
     color: $secondary_color;
     text-align: center;

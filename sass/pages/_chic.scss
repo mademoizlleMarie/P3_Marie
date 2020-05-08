@@ -1,6 +1,8 @@
 .chic {
-  @include background_menu($chic_background_color);
-
+  @include background_menu($chic_background_color,80%);
+  @include pc-only() {
+    @include background_menu($chic_background_color, 60%);
+  }
   h1, h3 {
     margin: 0.1rem 0 0.1rem 0;
 
@@ -11,7 +13,7 @@
       font-family: $font3;
       @include text-gradient(map_get($deg,deg2),$chic_color_primary,$chic_color_secondary);
       @include pc-only(){
-        font-size: map_get($fontsize,fontsize2-5);
+        font-size: map_get($fontsize,fontsize3);
       }
       @include tablette-only() {
         font-size: map_get($fontsize, fontsize2);
@@ -24,10 +26,26 @@
   &__entree, &__plat, &__dessert {
     &__titre {
       @include positiontitresectionpage;
-
       img {
         width: 25%
       }
+     /* h3:hover {
+        background-size: 100% 100%;
+      }
+
+      h3{
+        background: linear-gradient(to top, #c77529 5%, #c77529 5%, transparent 5%);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: left;
+        background-size: 0 100%;
+        transition: background-size 1000ms ease;
+      }*/
+
+      h3:hover:after{
+        transform:scaleX(1);
+      }
+
     }
 
     h3 {
@@ -73,6 +91,11 @@
     &--color {
       color: $chic_color_primary;
     }
+    &__titre{
+      h3:after{
+        @include traitTitreSousMenu($chic_color_primary)
+      }
+    }
   }
 
   &__plat {
@@ -91,11 +114,21 @@
     &--color {
       color: $chic_color_tertiary;
     }
+    &__titre{
+      h3:after{
+        @include traitTitreSousMenu($chic_color_tertiary)
+      }
+    }
   }
 
   &__dessert {
     &--color {
       color: $chic_color_secondary;
+    }
+    &__titre{
+      h3:after{
+        @include traitTitreSousMenu($chic_color_secondary)
+      }
     }
   }
 }

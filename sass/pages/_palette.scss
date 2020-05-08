@@ -1,8 +1,10 @@
 .palette {
   font-family:$font7;
   font-weight: normal;
-  @include background_menu($palette_background_color);
-
+  @include background_menu($delice_background_color,80%);
+  @include pc-only() {
+    @include background_menu($delice_background_color, 60%);
+  }
   h1, h3 {
     margin: 0.1rem 0 0.1rem 0;
   }
@@ -12,18 +14,15 @@
       @include text-gradient(map_get($deg, deg1), $palette_color_primary, $palette_color_secondary);
       @include pc-only(){
         font-size: map_get($fontsize,fontsize2-5);
+
       }
     }
-
     @include headerpage
   }
 
   &__entree, &__plat, &__dessert {
     &__titre {
       @include positiontitresectionpage;
-      @include pc-only(){
-        font-size: map_get($fontsize,fontsize2);
-      }
       img {
         width: 25%
       }
@@ -31,10 +30,18 @@
     h3 {
       font-size: map_get($fontsize,fontsize1);
       font-family: $font6;
+      font-weight: normal;
       @include pc-only(){
-        font-size: map_get($fontsize,fontsize1-5);
+        font-size: map_get($fontsize,fontsize2);
       }
     }
+    h3:hover:after{
+      transform: scaleX(1);
+    }
+    h3:after{
+      @include traitTitreSousMenu($palette_color_secondary)
+    }
+
     &__detail {
       @include positionstylelistedetailpage;
       @include tablette-only(){

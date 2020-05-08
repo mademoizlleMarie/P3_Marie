@@ -1,5 +1,8 @@
 .delice {
-  @include background_menu($delice_background_color);
+  @include background_menu($delice_background_color,80%);
+  @include pc-only() {
+    @include background_menu($delice_background_color, 60%);
+  }
 
   h1, h3 {
     margin: 0.1rem 0 0.1rem 0;
@@ -10,11 +13,25 @@
       font-family: $font5;
       @include text-gradient(map_get($deg, deg2), $delice_color_primary, $delice_color_secondary);
       @include pc-only() {
-        font-size: map_get($fontsize, fontsize2-5);
+        font-size: map_get($fontsize, fontsize3);
       }
     }
-
     @include headerpage
+  }
+  &__entree {
+    h3:after{
+      @include traitTitreSousMenu($delice_color_primary)
+    }
+  }
+  &__plat {
+    h3:after{
+      @include traitTitreSousMenu($delice_color_tertiary)
+    }
+  }
+  &__dessert {
+    h3:after{
+      @include traitTitreSousMenu($delice_color_secondary)
+    }
   }
 
   &__entree, &__plat, &__dessert {
@@ -34,13 +51,16 @@
         font-size: map_get($fontsize, fontsize2);
       }
     }
+      h3:hover:after{
+       transform:scaleX(1);
+     }
+
 
     &__detail {
       @include positionstylelistedetailpage;
       @include tablette-only() {
         font-size: map_get($fontsize, fontsize1);
       }
-
       .nomPlat {
         display: flex;
         flex-direction: column;

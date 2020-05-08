@@ -1,12 +1,20 @@
 .note {
-  @include background_menu($note_background_color);
+  @include background_menu($note_background_color,80%);
+  @include pc-only() {
+    @include background_menu($note_background_color, 60%);
+  }
   color: $note_color_primary;
 
   h1, h3 {
     font-weight: normal;
     font-family: $font1;
     margin: 0.1rem 0 0.1rem 0;
+  }
+  h1{
     @include pc-only(){
+      font-size: map_get($fontsize,fontsize2-5);
+    }
+    @include tablette-only(){
       font-size: map_get($fontsize,fontsize2);
     }
   }
@@ -15,10 +23,13 @@
     @include headerpage;
 
     img {
-      width: 15%;
+      width: 10%;
       height: auto;
       @include pc-only() {
-        width: 8%
+        width: 6%
+      }
+      @include tablette-only() {
+        width: 6%
       }
     }
 
@@ -27,12 +38,23 @@
   &__entree, &__plat, &__dessert {
     &__titre {
       @include positiontitresectionpage;
-
       img {
         width: 25%;
         @include pc-only(){
           width: 35%
         }
+      }
+      @include pc-only(){
+        font-size: map_get($fontsize,fontsize1-5);
+      }
+      @include tablette-only(){
+        font-size: map_get($fontsize,fontsize1-5);
+      }
+      :hover:after{
+        transform:scaleX(1);
+      }
+      :after{
+        @include traitTitreSousMenu($note_color_primary)
       }
     }
     &__detail {
@@ -42,6 +64,9 @@
         flex-direction: column;
         @include pc-only(){
           font-size: map_get($fontsize,fontsize1-5);
+        }
+        @include tablette-only(){
+          font-size: map_get($fontsize,fontsize1-2);
         }
         font-family: $font6;
       }
@@ -68,10 +93,13 @@
     padding-bottom: 2rem;
 
     img {
-      width: 10%;
+      width: 5%;
       margin-right: 0.5rem;
       @include pc-only(){
-        width: 7%
+        width: 3%
+      }
+      @include tablette-only(){
+        width: 3%
       }
     }
 
