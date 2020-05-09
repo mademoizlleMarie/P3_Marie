@@ -371,26 +371,26 @@ main {
     padding-bottom: 1rem;
   }
 }
-.chic h1, .chic h3 {
+.chic h2, .chic h3 {
   margin: 0.1rem 0 0.1rem 0;
 }
 .chic__header {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.chic__header h1 {
+.chic__header h2 {
   font-family: "Lateef", "serif";
   background-image: linear-gradient(155deg, #D8852E, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .chic__header h1 {
+  .chic__header h2 {
     font-size: 3em;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-  .chic__header h1 {
+  .chic__header h2 {
     font-size: 2em;
   }
 }
@@ -532,21 +532,21 @@ main {
     padding-bottom: 1rem;
   }
 }
-.delice h1, .delice h3 {
+.delice h2, .delice h3 {
   margin: 0.1rem 0 0.1rem 0;
 }
 .delice__header {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.delice__header h1 {
+.delice__header h2 {
   font-family: "Dancing Script", "serif";
   background-image: linear-gradient(155deg, #0431DF, #0887FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .delice__header h1 {
+  .delice__header h2 {
     font-size: 3em;
   }
 }
@@ -662,18 +662,18 @@ main {
     padding-bottom: 1rem;
   }
 }
-.note h1, .note h3 {
+.note h2, .note h3 {
   font-weight: normal;
   font-family: "devonshire", "serif";
   margin: 0.1rem 0 0.1rem 0;
 }
 @media screen and (min-width: 1200px) {
-  .note h1 {
+  .note h2 {
     font-size: 2.5em;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-  .note h1 {
+  .note h2 {
     font-size: 2em;
   }
 }
@@ -812,20 +812,20 @@ main {
     padding-bottom: 1rem;
   }
 }
-.palette h1, .palette h3 {
+.palette h2, .palette h3 {
   margin: 0.1rem 0 0.1rem 0;
 }
 .palette__header {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.palette__header h1 {
+.palette__header h2 {
   background-image: linear-gradient(100deg, #3D9139, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .palette__header h1 {
+  .palette__header h2 {
     font-size: 2.5em;
   }
 }

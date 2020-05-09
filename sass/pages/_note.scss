@@ -5,12 +5,12 @@
   }
   color: $note_color_primary;
 
-  h1, h3 {
+  h2, h3 {
     font-weight: normal;
     font-family: $font1;
     margin: 0.1rem 0 0.1rem 0;
   }
-  h1{
+  h2{
     @include pc-only(){
       font-size: map_get($fontsize,fontsize2-5);
     }

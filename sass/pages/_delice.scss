@@ -4,12 +4,12 @@
     @include background_menu($delice_background_color, 60%);
   }
 
-  h1, h3 {
+  h2, h3 {
     margin: 0.1rem 0 0.1rem 0;
   }
 
   &__header {
-    h1 {
+    h2 {
       font-family: $font5;
       @include text-gradient(map_get($deg, deg2), $delice_color_primary, $delice_color_secondary);
       @include pc-only() {

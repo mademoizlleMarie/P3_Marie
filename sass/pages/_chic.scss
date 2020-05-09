@@ -3,13 +3,13 @@
   @include pc-only() {
     @include background_menu($chic_background_color, 60%);
   }
-  h1, h3 {
+  h2, h3 {
     margin: 0.1rem 0 0.1rem 0;
 
   }
 
   &__header {
-    h1 {
+    h2 {
       font-family: $font3;
       @include text-gradient(map_get($deg,deg2),$chic_color_primary,$chic_color_secondary);
       @include pc-only(){
